@@ -4,6 +4,3 @@ backgroundColor="#000000"
 secondaryBackgroundColor="#0a101a"
 textColor="#ffffff"
 font="Franklin Gothic Medium Cond"
-
-[tool]
-packages = "libgl1-mesa-glx"
