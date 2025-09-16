@@ -47,7 +47,7 @@ def generate_summary(chat_log, loaded_tokenizer, loaded_model):
 
 # --- Streamlit UI Components ---
 def text_summarizer():
-
+    st.title("Chat Summarizer")
     tokenizer, model = load_model_and_tokenizer()
     
     # Text area for user input
@@ -68,5 +68,5 @@ def text_summarizer():
                 st.write(summary_output)
         else:
             st.warning("Please paste a chat log to generate a summary.")
-if __name__=="__main_":
+if __name__=="__main__":
     text_summarizer()
