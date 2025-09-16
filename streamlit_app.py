@@ -11,8 +11,8 @@ def load_model_and_tokenizer():
     """
     try:
         # Load the fine-tuned model and tokenizer from the saved directory
-        tokenizer = AutoTokenizer.from_pretrained("fine-tuned-moderator")
-        model = AutoModelForSeq2SeqLM.from_pretrained("fine-tuned-moderator")
+        tokenizer = AutoTokenizer.from_pretrained("Chat_Summarizer/fine-tuned-moderator")
+        model = AutoModelForSeq2SeqLM.from_pretrained("Chat_Summarizer/fine-tuned-moderator")
         return tokenizer, model
     except OSError:
         st.error("Model files not found. Please ensure the fine-tuning script has been run and the 'fine-tuned-moderator' directory exists.")
