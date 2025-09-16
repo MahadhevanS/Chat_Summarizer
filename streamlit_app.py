@@ -68,3 +68,5 @@ def text_summarizer():
                 st.write(summary_output)
         else:
             st.warning("Please paste a chat log to generate a summary.")
+if __init__==__main_:
+    text_summarizer()
